@@ -14,6 +14,7 @@
 
     /* OPCION 2*/
 
+    --main-color: rgb(246, 246, 246);
     --underline-color: rgb(255, 218, 118);
     --footer-color: #ccc;
     --font-color: #000;
@@ -78,7 +79,7 @@ nav .desktop-nav .menu-cont li {
 }
 
 nav a {
-    
+    color: #333;
 }
 
 a {
@@ -87,7 +88,9 @@ a {
     transition: .5s all;
 }
 
-a:hover {
+nav a:hover,
+.welcome a:hover,
+.links a:hover {
     position: relative;
     top: -1.5px;
 }
@@ -138,7 +141,8 @@ a:hover {
 }
 
 .welcome h1 {
-    margin: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     text-decoration: underline  var(--underline-color);
 }
 
@@ -159,7 +163,7 @@ a:hover {
 
 
 .welcome .welcome-cont a {
-    text-decoration: underline  var(--underline-color);
+    font-weight: bold;
 }
 
 /* TESTIMONIOS */
@@ -298,10 +302,14 @@ h3 {
     margin: 10px;
 }
 
+.data-cont a {
+    text-decoration: underline;
+}
+
 /* FOOTER */
 
 footer {
-    background-color: var(--footer-color);
+    background-color: var(--underline-color);
     padding: 30px;
     text-align: center;
 }
