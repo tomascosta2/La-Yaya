@@ -119,21 +119,41 @@ a:hover {
 .welcome {
     padding: 40px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     background-color: var(--secondary-color);
 }
 
-.welcome h2,
-.welcome p {
+.welcome .welcome-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 65%;
+    margin: 20px;
+    text-align: center;
+}
+
+.welcome .welcome-cont h2,
+.welcome .welcome-cont p {
     color: var(--font-color);
 }
 
-.welcome h2 {
+.welcome .welcome-cont h2 {
+    margin-right: 20px;
 }
 
-.welcome p {
+.welcome .welcome-cont p {
     width: 80%;
+}
+
+.welcome img {
+    width: 60%;
+}
+
+.welcome .welcome-cont a {
+    text-decoration: underline wavy var(--underline-color);
 }
 
 /* TESTIMONIOS */
