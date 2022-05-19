@@ -3,13 +3,30 @@
     margin: 0;
 }
 
+:root {
+
+    /* OPCION 1*/
+
+    --main-color: black;
+    --secondary-color: #111;
+    --underline-color: rgb(255, 187, 0);
+    --font-color: #fff;
+
+    /* OPCION 2*/
+
+    /* --main-color: #ff9500;
+    --secondary-color: rgb(255, 174, 0);
+    --underline-color: rgb(255, 251, 0);
+    --font-color: #fff; */
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
+    font-family: 'Anton', sans-serif;
+    background-color: var(--main-color);
 }
 
 /* WHATSAPP */
@@ -69,11 +86,11 @@ a {
 }
 
 a:hover {
-    text-decoration: underline wavy 2px rgb(255, 187, 0);
+    text-decoration: underline wavy 2px var(--underline-color);
 }
 
 .testimonios .links a:hover {
-    text-decoration: underline wavy 2px rgb(255, 187, 0);
+    text-decoration: underline wavy 2px var(--underline-color);
 }
 
  /* INICIO */
@@ -104,12 +121,12 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #111;
+    background-color: var(--secondary-color);
 }
 
 .welcome h2,
 .welcome p {
-    color: #fff;
+    color: var(--font-color);
 }
 
 .welcome h2 {
@@ -126,12 +143,12 @@ a:hover {
     flex-direction: column;
     padding: 40px;
     text-align: center;
-    background-color: black;
+    background-color: var(--main-color);
 }
 
 .testimonios h3 {
-    color: #fff;
-    text-decoration: underline wavy rgb(255, 187, 0);
+    color: var(--font-color);
+    text-decoration: underline wavy var(--underline-color);
 }
 
 .testimonios .testimonios-cont {
@@ -160,7 +177,7 @@ a:hover {
 
 .testimonios .links a {
     margin: 10px;
-    color: #fff;
+    color: var(--font-color);
     text-decoration: none;
 }
 
@@ -169,12 +186,15 @@ a:hover {
 .galeria {
     padding: 40px;
     text-align: center;
-    background-color: #111;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h3 {
-    color: #fff;
-    text-decoration: underline wavy rgb(255, 187, 0);
+    color: var(--font-color);
+    text-decoration: underline wavy var(--underline-color);
 }
 
 .galeria .galeria-cont {
@@ -199,19 +219,19 @@ h3 {
     text-align: center;
     width: 60%;
     margin: 0 auto;
-    background-color: black;
+    background-color: var(--main-color);
 }
 
 .info h3 {
-    color: #fff;
-    text-decoration: underline wavy rgb(255, 187, 0);
+    color: var(--font-color);
+    text-decoration: underline wavy var(--underline-color);
     margin: 20px;
 }
 
 .info p,
 .info a,
 .info h4 {
-    color: #fff;
+    color: var(--font-color);
     margin-bottom: 5px;
 }
 
@@ -228,7 +248,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #111;
+    background-color: var(--secondary-color);
 }
 
 .info .contacto-cont,
@@ -247,7 +267,7 @@ h3 {
 }
 
 .horarios-cont ul li {
-    color: #fff;
+    color: var(--font-color);
     list-style: none;
     margin: 10px;
 }
@@ -255,13 +275,13 @@ h3 {
 /* FOOTER */
 
 footer {
-    background-color: #111;
+    background-color: var(--secondary-color);
     padding: 30px;
     text-align: center;
 }
 
 footer p {
-    color: #fff;
+    color: var(--font-color);
 }
 
 /* MEDIAS */
@@ -290,7 +310,11 @@ footer p {
     }
 
     .info {
-        width: 90%;
+        width: 80%;
+    }
+
+    .info .map-cont {
+        width: 100%;
     }
 }
 
@@ -313,5 +337,9 @@ footer p {
     .galeria .galeria-cont {
         grid-template-columns: repeat(1, 1fr);
     }    
+
+    nav a {
+        font-size: smaller;
+    }
 }
 
