@@ -135,13 +135,14 @@ a:hover {
     text-align: center;
 }
 
-.welcome .welcome-cont h2,
+.welcome h2,
 .welcome .welcome-cont p {
     color: var(--font-color);
 }
 
-.welcome .welcome-cont h2 {
-    margin-right: 20px;
+.welcome h2 {
+    margin-bottom: 30px;
+    text-decoration: underline wavy var(--underline-color);
 }
 
 .welcome .welcome-cont p {
@@ -328,7 +329,7 @@ footer p {
     }
 
     .welcome h2 {
-        margin: 5px;
+        margin-bottom: 20px;
     }
 
     .testimonios .links {
@@ -352,7 +353,7 @@ footer p {
 @media (max-width: 750px) {
     
     .welcome {
-        flex-direction: column-reverse;
+        /* flex-direction: column-reverse; */
     }
 
     .inicio h1 {
