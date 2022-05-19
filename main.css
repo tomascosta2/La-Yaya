@@ -7,17 +7,16 @@
 
     /* OPCION 1*/
 
-    --main-color: black;
+    /* --main-color: black;
     --secondary-color: #111;
     --underline-color: rgb(255, 187, 0);
-    --font-color: #fff;
+    --font-color: #fff; */
 
     /* OPCION 2*/
 
-    /* --main-color: #ff9500;
-    --secondary-color: rgb(255, 174, 0);
-    --underline-color: rgb(255, 251, 0);
-    --font-color: #fff; */
+    --underline-color: rgb(255, 218, 118);
+    --footer-color: #ccc;
+    --font-color: #000;
 }
 
 html {
@@ -52,13 +51,12 @@ body {
 
 .wpp i {
     font-size: 25px;
+    color: #fff;
 }
 
 /* NAV */
 
 nav {
-    position: relative;
-    bottom: 0;
     width: 100%;
 }
 
@@ -66,7 +64,7 @@ nav .desktop-nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.464);
+    background-color: var(--underline-color);
     padding: 5px;
 }
 
@@ -79,21 +77,23 @@ nav .desktop-nav .menu-cont li {
     margin: 7px 20px;
 }
 
+nav a {
+    
+}
+
 a {
     text-decoration: none;
-    color: #fff;
-    transition: .21s all;
+    color: #000;
+    transition: .5s all;
 }
 
 a:hover {
-    text-decoration: underline wavy 2px var(--underline-color);
+    position: relative;
+    top: -1.5px;
 }
 
-.testimonios .links a:hover {
-    text-decoration: underline wavy 2px var(--underline-color);
-}
 
- /* INICIO */
+ /* INICIO
 
 .inicio {
     display: flex;
@@ -103,16 +103,13 @@ a:hover {
     background-image: url(images/inicio-blur.jpg);
     background-size: cover;
     background-position: center;
+    width: 100%;
+    position: fixed;
 }
 
-.inicio h1 {
-    /* color: rgb(255, 187, 0); */
-    color: #fff;
-    font-family: 'Anton', sans-serif;
-    font-size: 80px;
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
+.inicio a:hover {
+    font-size: 15px;
+} */
 
 /* WELCOME */
 
@@ -135,26 +132,34 @@ a:hover {
     text-align: center;
 }
 
-.welcome h2,
+.welcome h1,
 .welcome .welcome-cont p {
     color: var(--font-color);
 }
 
-.welcome h2 {
-    margin-bottom: 30px;
-    text-decoration: underline wavy var(--underline-color);
+.welcome h1 {
+    margin: 40px;
+    text-decoration: underline  var(--underline-color);
 }
 
 .welcome .welcome-cont p {
     width: 80%;
 }
 
-.welcome img {
+.welcome .welcome-img-cont {
     width: 60%;
+    height: 400px;
 }
 
+.welcome .welcome-img-cont img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 .welcome .welcome-cont a {
-    text-decoration: underline wavy var(--underline-color);
+    text-decoration: underline  var(--underline-color);
 }
 
 /* TESTIMONIOS */
@@ -169,7 +174,7 @@ a:hover {
 
 .testimonios h3 {
     color: var(--font-color);
-    text-decoration: underline wavy var(--underline-color);
+    text-decoration: underline  var(--underline-color);
 }
 
 .testimonios .testimonios-cont {
@@ -215,7 +220,7 @@ a:hover {
 
 h3 {
     color: var(--font-color);
-    text-decoration: underline wavy var(--underline-color);
+    text-decoration: underline  var(--underline-color);
 }
 
 .galeria .galeria-cont {
@@ -245,7 +250,7 @@ h3 {
 
 .info h3 {
     color: var(--font-color);
-    text-decoration: underline wavy var(--underline-color);
+    text-decoration: underline  var(--underline-color);
     margin: 20px;
 }
 
@@ -296,7 +301,7 @@ h3 {
 /* FOOTER */
 
 footer {
-    background-color: var(--secondary-color);
+    background-color: var(--footer-color);
     padding: 30px;
     text-align: center;
 }
@@ -352,9 +357,9 @@ footer p {
 
 @media (max-width: 750px) {
     
-    .welcome {
-        /* flex-direction: column-reverse; */
-    }
+    /* .welcome {
+        flex-direction: column-reverse;
+    } */
 
     .inicio h1 {
         font-size: 60px;
