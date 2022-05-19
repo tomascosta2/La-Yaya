@@ -317,12 +317,23 @@ footer p {
 }
 
 @media (max-width: 900px) {
+
     .welcome {
         flex-direction: column;
     }
 
+    .welcome .welcome-cont,
+    .welcome img {
+        width: 90%;
+    }
+
     .welcome h2 {
         margin: 5px;
+    }
+
+    .testimonios .links {
+        display: flex;
+        flex-direction: column;
     }
 
     .galeria .galeria-cont {
@@ -339,6 +350,11 @@ footer p {
 }
 
 @media (max-width: 750px) {
+    
+    .welcome {
+        flex-direction: column-reverse;
+    }
+
     .inicio h1 {
         font-size: 60px;
     }
@@ -350,6 +366,7 @@ footer p {
 }
 
 @media (max-width: 650px) {
+
     .inicio h1 {
         font-size: 40px;
     }
