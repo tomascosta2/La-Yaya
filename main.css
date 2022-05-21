@@ -46,7 +46,7 @@ body {
 }
 
 .wpp:hover {
-    background-color: #25d36581;
+    background-color: #008b33;
     cursor: pointer;
 }
 
@@ -57,8 +57,17 @@ body {
 
 /* NAV */
 
-nav {
+.nav-cont {
+    display: flex;
+    justify-content: center;
     width: 100%;
+    margin-top: 20px;
+
+}
+
+nav {
+    width: fit-content;
+    position: fixed;
 }
 
 nav .desktop-nav {
@@ -66,7 +75,9 @@ nav .desktop-nav {
     align-items: center;
     justify-content: center;
     background-color: var(--underline-color);
+    border-radius: 25px;
     padding: 5px;
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.3);
 }
 
 nav .desktop-nav .menu-cont {
@@ -117,12 +128,15 @@ nav a:hover,
 /* WELCOME */
 
 .welcome {
-    padding: 40px;
+    margin-top: 40px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: var(--secondary-color);
+    background-image: url(images/fondo.jpg);
+    background-size: cover;
+    background-position: 0px;
 }
 
 .welcome .welcome-cont {
@@ -143,7 +157,7 @@ nav a:hover,
 .welcome h1 {
     margin-top: 30px;
     margin-bottom: 20px;
-    text-decoration: underline  var(--underline-color);
+    /* text-decoration: underline  var(--underline-color); */
 }
 
 .welcome .welcome-cont p {
@@ -178,7 +192,7 @@ nav a:hover,
 
 .testimonios h3 {
     color: var(--font-color);
-    text-decoration: underline  var(--underline-color);
+    /* text-decoration: underline  var(--underline-color); */
 }
 
 .testimonios .testimonios-cont {
@@ -224,7 +238,7 @@ nav a:hover,
 
 h3 {
     color: var(--font-color);
-    text-decoration: underline  var(--underline-color);
+    /* text-decoration: underline  var(--underline-color); */
 }
 
 .galeria .galeria-cont {
@@ -254,7 +268,7 @@ h3 {
 
 .info h3 {
     color: var(--font-color);
-    text-decoration: underline  var(--underline-color);
+    /* text-decoration: underline  var(--underline-color); */
     margin: 20px;
 }
 
@@ -300,6 +314,10 @@ h3 {
     color: var(--font-color);
     list-style: none;
     margin: 10px;
+}
+
+.horarios-cont ul {
+    margin-bottom: 50px;
 }
 
 .data-cont a {
