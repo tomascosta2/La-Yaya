@@ -31,6 +31,7 @@ body {
 
 h3 {
     font-size: 30px;
+    color: var(--font-color);
 }
 
 /* WHATSAPP */
@@ -47,6 +48,7 @@ h3 {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    z-index: 300;
 }
 
 .wpp:hover {
@@ -59,6 +61,29 @@ h3 {
     color: #fff;
 }
 
+/* MOBILE NAV */
+
+.mobile-nav {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--underline-color);
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.3);
+}
+
+/* lista de menues */
+
+.mobile-nav .menu-mobile-cont {
+    display: none; 
+    
+}
+
 /* NAV */
 
 .nav-cont {
@@ -66,7 +91,13 @@ h3 {
     justify-content: center;
     width: 100%;
     margin-top: 20px;
+    position: relative;
+    z-index: 301;
 
+}
+
+.nav-cont .desktop-nav {
+    display: flex;
 }
 
 nav {
@@ -143,6 +174,14 @@ nav a:hover,
     background-position: 0px;
 }
 
+.welcome .forma1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 35%;
+}
+
 .welcome .welcome-cont {
     display: flex;
     align-items: center;
@@ -162,6 +201,7 @@ nav a:hover,
     margin-top: 30px;
     margin-bottom: 20px;
     font-size: 40px;
+    z-index: 155;
     /* text-decoration: underline  var(--underline-color); */
 }
 
@@ -172,12 +212,14 @@ nav a:hover,
 .welcome .welcome-img-cont {
     width: 60%;
     height: 400px;
+    z-index: 150;
 }
 
 .welcome .welcome-img-cont img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 6px;
 }
 
 
@@ -196,8 +238,18 @@ nav a:hover,
     background-color: var(--main-color);
 }
 
+.testimonios .forma2 {
+    position: absolute;
+    margin-top: -100px;
+    margin-left: -40px;
+    width: 100%;
+    height: 50%;
+    z-index: 2;
+}
+
 .testimonios h3 {
     color: var(--font-color);
+    z-index: 100;
     /* text-decoration: underline  var(--underline-color); */
 }
 
@@ -206,6 +258,7 @@ nav a:hover,
     flex-direction: row;
     width: 80%;
     margin: 20px auto;
+    z-index: 110;
 }
 
 .testimonios .testimonios-cont .testimonio-item {
@@ -241,11 +294,15 @@ nav a:hover,
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 115;
 }
 
-h3 {
-    color: var(--font-color);
-    /* text-decoration: underline  var(--underline-color); */
+.galeria .forma3 {
+    position: absolute;
+    width: 40%;
+    height: 150vh;
+    right: 0;
+    z-index: 3;
 }
 
 .galeria .galeria-cont {
@@ -256,11 +313,20 @@ h3 {
     padding: 40px;
     width: 80%;
     margin: 0 auto;
+    z-index: 203;
 }
 
 .galeria img {
     width: 100%;
     height: 100%;
+    border-radius: 6px;
+}
+
+.galeria .forma4 {
+    position: absolute;
+    width: 50%;
+    left: 0;
+    margin-top: 300px;
 }
 
 /* COMUNICATE */
@@ -333,6 +399,8 @@ h3 {
     text-decoration: underline;
 }
 
+
+
 /* FOOTER */
 
 footer {
@@ -341,8 +409,23 @@ footer {
     text-align: center;
 }
 
-footer p {
+footer .footer-text {
+    position: relative;
+    z-index: 10;
+}
+
+footer .footer-text p {
     color: var(--font-color);
+}
+
+footer .forma5 {
+    position: absolute;
+    left: 0;
+    height: 30%;
+    width: 100%;
+    margin-top: -160px;
+    z-index: 5;
+    opacity: 1;
 }
 
 /* MEDIAS */
